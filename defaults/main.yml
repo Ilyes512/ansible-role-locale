@@ -1,0 +1,25 @@
+---
+locale_packages:
+  - locales
+  - language-pack-nl
+
+locale_gen:
+  - { name: 'en_US', encoding: 'UTF-8' }
+  - { name: 'en_GB', encoding: 'UTF-8' }
+  - { name: 'nl_NL', encoding: 'UTF-8' }
+
+locale_LANG: en_US.UTF-8
+locale_LC_ADDRESS:
+locale_LC_ALL:
+locale_LC_COLLATE:
+locale_LC_CTYPE:
+locale_LC_IDENTIFICATION:
+locale_LC_MEASUREMENT:
+locale_LC_MESSAGES: en_GB.UTF-8
+locale_LC_MONETARY:
+locale_LC_NAME: nl_NL.UTF-8
+locale_LC_NUMERIC:
+locale_LC_PAPER: nl_NL.UTF-8
+locale_LC_RESPONSE:
+locale_LC_TELEPHONE:
+locale_LC_TIME:
