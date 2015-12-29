@@ -1,7 +1,10 @@
 ---
+ansidev_package_state: present
+
 locale_packages:
   - locales
   - language-pack-nl
+local_package_state: {{ ansidev_package_state }}
 
 locale_gen:
   - { name: 'en_US', encoding: 'UTF-8' }
