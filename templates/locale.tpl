@@ -1,5 +1,3 @@
-# {{ ansible_managed }}
-
 LANG={{ locale_LANG }}
 
 {%- if locale_LC_ADDRESS -%}
