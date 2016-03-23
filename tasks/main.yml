@@ -15,9 +15,8 @@
     state: present
   with_items: locale_gen
 
-
 - name: Locale | Set system default locale
   sudo: yes
   template:
-    src: locale.tpl
+    src: locale.j2
     dest: /etc/default/locale
