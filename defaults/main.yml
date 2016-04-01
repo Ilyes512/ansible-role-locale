@@ -12,6 +12,7 @@ locale_gen:
   - { name: 'nl_NL', encoding: 'UTF-8' }
 
 locale_LANG: en_US.UTF-8 # This is the default value for all other value below (locale_LC_*)
+locale_LC_LANGUAGE: "{{ locale_LANG }}"
 locale_LC_ADDRESS: "{{ locale_LANG }}"
 locale_LC_ALL: "{{ locale_LANG }}"
 locale_LC_COLLATE: "{{ locale_LANG }}"
@@ -26,3 +27,4 @@ locale_LC_PAPER: "{{ locale_LANG }}"
 locale_LC_RESPONSE: "{{ locale_LANG }}"
 locale_LC_TELEPHONE: "{{ locale_LANG }}"
 locale_LC_TIME: "{{ locale_LANG }}"
+locale_LC_ALL: "{{ locale_LANG }}"
