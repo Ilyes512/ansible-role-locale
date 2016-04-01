@@ -6,14 +6,14 @@
     state: "{{ local_package_state }}"
     update_cache: yes
     cache_valid_time: 3600
-  with_items: locale_packages
+  with_items: '{{ locale_packages }}'
 
 - name: Locale | Generate system locale's
   sudo: yes
   locale_gen:
     name: "{{ item.name }}.{{ item.encoding }}"
     state: present
-  with_items: locale_gen
+  with_items: '{{ locale_gen }}'
 
 - name: Locale | Set system default locale
   sudo: yes
