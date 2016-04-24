@@ -12,19 +12,37 @@ locale_gen:
   - { name: 'en_GB', encoding: 'UTF-8' }
   - { name: 'nl_NL', encoding: 'UTF-8' }
 
-locale_LANG: en_US.UTF-8 # This is the default value for all other value below (locale_LC_*)
-locale_LC_LANGUAGE: "{{ locale_LANG }}"
+# Provides default value for LC_* variables that have not been explicitly set.
+locale_LANG: en_US.UTF-8
+# How addresses are formatted (country first or last, where zip code goes etc.).
 locale_LC_ADDRESS: "{{ locale_LANG }}"
-locale_LC_ALL: "{{ locale_LANG }}"
+# Overrides individual LC_* settings: if LC_ALL is set, none of the below have any effect.
+locale_LC_ALL: null
+# How strings (file names...) are alphabetically sorted. Using the "C" or "POSIX" locale here
+# results in a strcmp()-like sort order, which may be preferable to language-specific locales.
 locale_LC_COLLATE: "{{ locale_LANG }}"
+# How characters are classified as letters, numbers etc. This determines things like how
+# characters are converted between upper and lower case.
 locale_LC_CTYPE: "{{ locale_LANG }}"
+# Metadata about the locale information.
 locale_LC_IDENTIFICATION: "{{ locale_LANG }}"
+# What units of measurement are used (feet, meters, pounds, kilos etc.).
 locale_LC_MEASUREMENT: "{{ locale_LANG }}"
+# What language should be used for system messages.
 locale_LC_MESSAGES: "{{ locale_LANG }}"
+# What currency you use, its name, and its symbol.
 locale_LC_MONETARY: "{{ locale_LANG }}"
+# How names are represented (surname first or last, etc.).
 locale_LC_NAME: "{{ locale_LANG }}"
+# How you format your numbers. For example, in many countries a period (.) is used as a decimal
+# separator, while others use a comma (,).
 locale_LC_NUMERIC: "{{ locale_LANG }}"
+# Paper sizes: 11 x 17 inches, A4, etc.
 locale_LC_PAPER: "{{ locale_LANG }}"
+# Determines how responses (such as Yes and No) appear in the local language.
 locale_LC_RESPONSE: "{{ locale_LANG }}"
+# What your telephone numbers look like.
 locale_LC_TELEPHONE: "{{ locale_LANG }}"
+# How your time and date are formatted. Use for example "en_DK.UTF-8" to get a 24-hour-clock
+# in some programs.
 locale_LC_TIME: "{{ locale_LANG }}"

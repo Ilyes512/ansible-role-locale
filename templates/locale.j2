@@ -1,7 +1,8 @@
 LANG={{ locale_LANG }}
-LC_LANGUAGE={{ locale_LC_LANGUAGE }}
 LC_ADDRESS={{ locale_LC_ADDRESS }}
+{% if locale_LC_ALL is defined and locale_LC_ALL %}
 LC_ALL={{ locale_LC_ALL }}
+{% endif %}
 LC_COLLATE={{ locale_LC_COLLATE }}
 LC_CTYPE={{ locale_LC_CTYPE }}
 LC_IDENTIFICATION={{ locale_LC_IDENTIFICATION }}
