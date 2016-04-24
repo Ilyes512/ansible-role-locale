@@ -3,7 +3,8 @@ ansidev_package_state: present
 
 locale_packages:
   - locales
-  - language-pack-nl
+  - language-pack-nl-base
+  - language-pack-en-base
 local_package_state: "{{ ansidev_package_state }}"
 
 locale_gen:
